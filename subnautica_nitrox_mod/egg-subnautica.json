@@ -15,7 +15,7 @@
         "ghcr.io\/ptero-eggs\/yolks:dotnet_9": "ghcr.io\/ptero-eggs\/yolks:dotnet_9"
     },
     "file_denylist": [],
-    "startup": "export HOME=\/home\/container\/subnautica; .\/nitrox\/NitroxServer-Subnautica",
+    "startup": "export HOME=\/home\/container\/subnautica; .\/nitrox\/Nitrox.Server.Subnautica",
     "config": {
         "files": "{\r\n    \"server.cfg\": {\r\n        \"parser\": \"properties\",\r\n        \"find\": {\r\n            \"ServerPort\": \"{{server.build.default.port}}\",\r\n            \"SaveInterval\": \"{{server.build.env.SAVE_INTERVAL}}\",\r\n            \"DisableAutoSave\": \"{{server.build.env.SAVE_DISABLE}}\",\r\n            \"SaveName\": \"{{server.build.env.SAVE_NAME}}\",\r\n            \"ServerPassword\": \"{{server.build.env.SUBNAUTICA_PASSWORD}}\",\r\n            \"AdminPassword\": \"{{server.build.env.SUBNAUTICA_ADMIN_PASSWORD}}\",\r\n            \"GameMode\": \"{{server.build.env.SERVER_MODE}}\",\r\n            \"AutoPortForward\": \"{{server.build.env.PORTFORWARD_ENABLE}}\",\r\n            \"SerializerMode\": \"{{server.build.env.SERIALIZER_MODE}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \"Server started\"\r\n}",
